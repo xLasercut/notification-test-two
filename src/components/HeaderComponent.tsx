@@ -32,7 +32,7 @@ function HeaderComponent() {
         <Header.NavItem href='' onClick={goHome}>Submission History</Header.NavItem>
         <Header.NavItem href='' onClick={e => {
             e.preventDefault()
-            navigate('/notification-test/notification-settings')
+            navigate('/notification-test-two/notification-settings')
         }}>
           Notification Settings
         </Header.NavItem>

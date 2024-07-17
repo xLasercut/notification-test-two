@@ -5,15 +5,15 @@ import Home from '../views/Home.tsx';
 
 const router = createBrowserRouter([
   {
-    path: '/notification-test/',
+    path: '/notification-test-two/',
     element: <App />,
     children: [
       {
-        path: '/notification-test/',
+        path: '/notification-test-two/',
         element: <Home></Home>,
       },
       {
-        path: '/notification-test/notification-settings',
+        path: '/notification-test-two/notification-settings',
         element: <NotificationSettings></NotificationSettings>,
       },
     ],

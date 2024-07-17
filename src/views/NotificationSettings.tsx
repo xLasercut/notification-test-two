@@ -27,13 +27,13 @@ function NotificationSettings() {
     submissionWindowClose: 'A collection submission window is due to close',
     submissionProcessed: 'The submission file has been processed',
     submissionSummaryReady: 'The submission summary extract is now available for download',
-    postDeadlineReady: 'The post-deadline submission extract is ready for request',
+    // postDeadlineReady: 'The post-deadline submission extract is ready for request',
     extractCanBeDownloaded: 'A requested submission extract is available for download',
   };
 
   const MSDS_NOTIFICATIONS: {[key: string]: string} = {
     midWindowClose: 'Provisional processing deadline for submission extracts is due',
-    midWindowReady: 'Provisional processing submission extracts are ready for request',
+    // midWindowReady: 'Provisional processing submission extracts are ready for request',
   };
 
   const notifications = Object.keys(NORMAL_NOTIFICATIONS).map(key => {
