@@ -2,6 +2,7 @@ import {Button, Col} from 'nhsuk-react-components';
 import {useClientDataStore} from '../store/client-data.ts';
 import {useNavigate} from 'react-router-dom';
 import {ROUTES} from '../routing/routes.ts';
+import {useEffect} from 'react';
 
 function Login() {
   const clientDataStore = useClientDataStore();
@@ -16,6 +17,10 @@ function Login() {
     clientDataStore.signIn(false);
     navigate(ROUTES.HOME);
   }
+
+  useEffect(() => {
+    clientDataStore.reset();
+  }, []);
 
   return (
     <>

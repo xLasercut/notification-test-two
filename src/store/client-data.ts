@@ -12,6 +12,7 @@ interface TClientDataStoreState extends TClientDataStoreData {
   setNotificationSettings: (settings: TNotificationSettings) => void;
   signIn: (msds: boolean) => void;
   signOut: () => void;
+  reset: () => void;
 }
 
 const initialData: TClientDataStoreData = {
@@ -49,6 +50,13 @@ const clientDataStore = createStore<TClientDataStoreState>(set => {
       return set(() => {
         return {
           signedIn: false,
+        };
+      });
+    },
+    reset: () => {
+      return set(() => {
+        return {
+          ...initialData,
         };
       });
     },
