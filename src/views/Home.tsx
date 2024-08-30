@@ -1,5 +1,6 @@
 import {Card} from 'nhsuk-react-components';
 import {Link} from 'react-router-dom';
+import {ROUTES} from '../routing/routes.ts';
 
 function Home() {
   return (
@@ -38,7 +39,7 @@ function Home() {
           <Card clickable data-test-id='submission-history-card'>
             <Card.Content>
               <Card.Heading>
-                <Link to='/notification-test/'>Submission History</Link>
+                <Link to={ROUTES.HOME}>Submission History</Link>
               </Card.Heading>
               <Card.Description>View previous submissions</Card.Description>
             </Card.Content>
@@ -49,4 +50,4 @@ function Home() {
   );
 }
 
-export default Home;
+export {Home};
